@@ -1,0 +1,65 @@
+/**
+ * 
+ */
+package com.cts.sales.service.entity;
+
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+/**
+ * @author 259428
+ *
+ */
+
+@Entity
+public class OrderLineItem {
+	
+	
+	@Id
+	   @GeneratedValue(strategy = GenerationType.AUTO)
+	   @Basic(optional = false)
+	   @Column(name = "id",unique=true, nullable = false)
+		private Long orderLineItemId;
+	
+	@Column
+	private String itemName;
+	@Column
+	private int quantity;
+	@Column
+	private Long orderId;
+	public Long getOrderLineItemId() {
+		return orderLineItemId;
+	}
+	public void setOrderLineItemId(Long orderLineItemId) {
+		this.orderLineItemId = orderLineItemId;
+	}
+	public String getItemName() {
+		return itemName;
+	}
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	public Long getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(Long orderId) {
+		this.orderId = orderId;
+	}
+	@Override
+	public String toString() {
+		return "OrderLineItem [orderLineItemId=" + orderLineItemId + ", itemName=" + itemName + ", quantity=" + quantity
+				+ ", orderId=" + orderId + "]";
+	}
+	
+
+}

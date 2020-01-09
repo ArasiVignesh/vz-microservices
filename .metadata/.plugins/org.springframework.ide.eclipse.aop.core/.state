@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SalesOrderService"/>
+<aop-project name="Zipkin"/>
+<aop-project name="ItemService"/>
+<aop-project name="Zuul"/>
+<aop-project name="CustomerService"/>
+<aop-project name="EurekaServer"/>
+<aop-project name="ConfigServer"/>
+</aop-reference-model>

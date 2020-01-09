@@ -1,0 +1,4 @@
+#server settings
+server.port=9094
+eurekaclient.serviceUrl.defaultZone= http://localhost:9093/eureka/
+spring.application.name=CustomerService
